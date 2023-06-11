@@ -1,0 +1,37 @@
+server:
+  port: 8080
+  tomcat:
+    use-relative-redirects: true
+  servlet:
+    session:
+      timeout: 600m
+  error:
+    path: /error
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/static/
+      add-mappings: true
+
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#
+#security:
+#  jwt:
+#    public:
+#      -----BEGIN RSA PUBLIC KEY-----
+#      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp37DeoWjGadG75nSCURE
+#      F+B7HrfjBk80MtdEvLlJUTR6UMfdVmxYYMO8BUaqdwfh0eZAW26TC3Vvn+c2LsSU
+#      FPrLTVxcpOCkvDRH6mgAduEiFrnu15a264hmN0L2ol445ZX2qgBvNpxflb0LggOB
+#      mHFBt2T38fcNWTOgONeW/nPFLP3BvlIAGFTpUU/otUA5WSWfsqeBRpGZT9cX4J7v
+#      Ebx6yevzc7S6V8D59ipzK5lrJ4+lOrJdLfEx0DK0B8k/X7pwbCoLJsJWcsXNKy65
+#      bBQP08/lzil9hiaHaNaxLOMF21CQueHMvxQ9tt268iYTJhxgkpbGXbhqdlTnq9IW
+#      kQIDAQAB
+#      -----END RSA PUBLIC KEY-----
