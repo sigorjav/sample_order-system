@@ -86,7 +86,7 @@ CREATE TABLE `products`
     `product_vendor`      varchar(50)    NOT NULL,
     `product_description` text           NOT NULL,
     `quantity_in_stock`   smallint(6)    NOT NULL,
-    `buyPrice`            decimal(10, 2) NOT NULL,
+    `buy_price`            decimal(10, 2) NOT NULL,
     `MSRP`                decimal(10, 2) NOT NULL,
     PRIMARY KEY (`product_code`),
     KEY `product_line` (`product_line`),
@@ -97,7 +97,7 @@ CREATE TABLE `products`
 /*Data for the table `products` */
 
 insert into `products`(`product_code`, `product_name`, `product_line`, `product_scale`, `product_vendor`,
-                       `product_description`, `quantity_in_stock`, `buyPrice`, `MSRP`)
+                       `product_description`, `quantity_in_stock`, `buy_price`, `MSRP`)
 values ('S10_1678', '1969 Harley Davidson Ultimate Chopper', 'Motorcycles', '1:10', 'Min Lin Diecast',
         'This replica features working kickstand, front suspension, gear-shift lever, footbrake lever, drive chain, wheels and steering. All parts are particularly delicate due to their precise scale and require special care and attention.',
         7933, '48.81', '95.70'),
