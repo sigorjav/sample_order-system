@@ -1791,6 +1791,13 @@ values (10100, '2003-01-06', '2003-01-13', '2003-01-10', 'Shipped', NULL, 363),
        (10425, '2005-05-31', '2005-06-07', NULL, 'In Process', NULL, 119);
 
 
+update orders set status = 'SHIPPED' where status = 'Shipped';
+update orders set status = 'CANCELLED' where status = 'Cancelled';
+update orders set status = 'RESOLVED' where status = 'Resolved';
+update orders set status = 'ON_HOLD' where status = 'On Hold';
+update orders set status = 'DISPUTED' where status = 'Disputed';
+update orders set status = 'IN_PROCESS' where status = 'In Process';
+
 /*Table structure for table `order_details` */
 
 DROP TABLE IF EXISTS `order_details`;
