@@ -1,0 +1,20 @@
+@startuml
+
+actor client as cli
+
+participant orderController as cont
+participant orderService as serv
+participant orderRepository as repo
+
+database orders_table as orders
+
+cli --> cont:
+cont --> serv:
+serv --> repo:
+repo --> orders_table:
+
+
+
+
+
+@enduml

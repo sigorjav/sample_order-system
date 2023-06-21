@@ -1,6 +1,6 @@
 package com.sigorjav.sample_ordersystem.order.repository.entity;
 
-import com.sigorjav.sample_ordersystem.order.enumerator.OrderEnum;
+import com.sigorjav.sample_ordersystem.order.enumerator.OrderStatus;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -21,7 +21,7 @@ public class Orders {
 
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
-    private OrderEnum status;
+    private OrderStatus status;
 
     @Column(name = "comments")
     private String comments;
@@ -35,6 +35,6 @@ public class Orders {
     private LocalDateTime requiredDate;
 
     @Column(name = "shipped_date")
-    private LocalDateTime shipped_date;
+    private LocalDateTime shippedDate;
 
 }

@@ -1,6 +1,6 @@
 package com.sigorjav.sample_ordersystem.order.enumerator;
 
-public enum OrderEnum {
+public enum OrderStatus {
     SHIPPED,
     CANCELLED,
     RESOLVED,
