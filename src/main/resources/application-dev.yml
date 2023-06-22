@@ -4,7 +4,7 @@ server:
 spring:
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://192.168.200.150:3306/order_system?serverTimezone=Asia/Seoul&createDatabaseIfNotExist=true
+    url: jdbc:mariadb://192.168.200.135:3306/order_system?serverTimezone=Asia/Seoul&createDatabaseIfNotExist=true
     username: shhan
     password: Han920!@#
 

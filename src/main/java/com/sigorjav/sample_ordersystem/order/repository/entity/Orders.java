@@ -23,8 +23,8 @@ public class Orders {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    @Column(name = "comments")
-    private String comments;
+//    @Column(name = "comments")
+//    private String comments;
 
     @NotNull
     @Column(name = "order_date")
