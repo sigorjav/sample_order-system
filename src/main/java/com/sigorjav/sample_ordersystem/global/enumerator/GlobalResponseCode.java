@@ -9,7 +9,8 @@ import org.springframework.http.HttpStatus;
 @AllArgsConstructor
 public enum GlobalResponseCode implements BaseResponse {
     OK(HttpStatus.OK, 0, "OK"),
-    ORDER_NOT_FOUND(HttpStatus.INTERNAL_SERVER_ERROR,-1000,"Order Not Found"),
+    ORDER_NOT_FOUND(HttpStatus.BAD_REQUEST,-1000,"Order Not Found"),
+    ORDER_DETAIL_NOT_FOUND(HttpStatus.BAD_REQUEST,-1001,"Order Detail Not Found"),
     ;
 
 

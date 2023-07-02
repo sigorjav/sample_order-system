@@ -18,10 +18,10 @@ public interface BaseResponse {
     }
 
     default ResponseEntity<GlobalResponse<?>> createGlobalEntity(){
-        GlobalResponse<?> globalResponse = new GlobalResponse<>();
+        GlobalResponse<?> globalResponse = new GlobalResponse<>(this.getCode(),this.getMessage(),null);
         HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type","application/json");
-        return new ResponseEntity<>(globalResponse, headers, HttpStatus.OK);
+        return new ResponseEntity<>(globalResponse, headers, this.getStatus());
     }
 
 }

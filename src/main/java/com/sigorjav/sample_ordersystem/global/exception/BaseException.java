@@ -1,10 +1,6 @@
 package com.sigorjav.sample_ordersystem.global.exception;
 
-import com.sigorjav.sample_ordersystem.global.enumerator.GlobalResponseCode;
 import com.sigorjav.sample_ordersystem.global.response.BaseResponse;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 public class BaseException extends Exception {
     public BaseResponse baseResponse;
