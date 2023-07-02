@@ -9,5 +9,4 @@ public class SampleOrderSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(SampleOrderSystemApplication.class, args);
     }
-
 }
